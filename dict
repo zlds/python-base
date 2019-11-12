@@ -1,0 +1,29 @@
+字典:
+    - 由key和value组成
+    - 它们不是序列、而是一种映射。
+    - 可边变象、是python中唯一的一种映射类型。
+
+  - 可以通过键对字典进行索引来读取或改变键所关联的值
+    >>> D = {'food': 'Spam', 'quantity': 4, 'color': 'pink'}
+    >>> D['food']
+    'Spam'
+    >>> D['quantity'] +=1
+    >>> D
+    {'food': 'Spam', 'color': 'pink', 'quantity': 5}
+  - 不同的创建字典方法
+    >>> D = {}
+    >>> D['name'] = 'Bob'
+    >>> D['job'] = 'dev'
+    >>> D['age'] = '40'
+    >>> D
+    {'name': 'Bob', 'job': 'dev', 'age': 40}
+
+  - 重访嵌套
+    >>> rec = {'name': {'first': 'Bob', 'last': 'Smith'}, 'job': ['dev', 'mgr'],
+               'age': 40.5}
+    >>> rec['name']
+    {'first': 'Bob', 'last': 'Smith'}
+    >>> rec['name']['lat']
+    'Smith'
+    >>> rec['job'][-1]
+    'mgr'
