@@ -1,0 +1,44 @@
+赋值语句形式:
+    spam = 'Spam'
+    spam, ham = 'yum', 'YUM'  元组形式赋值运算
+    [spam, ham] = ['yum', 'YUM'] 列表赋值运算
+    a, b, c, d = 'spam' 序列赋值运算、通用性
+    a, *b = 'spam' 扩展的序列解包
+    spam = ham = 'lunch'
+    spams += 42
+
+元组及列表分解赋值:
+    表中第二和第三种形式是相关的。python会按照位置把右边的对象和左边的目标从左至右相匹配对。
+
+多重目标赋值:
+    spam = ham = 'lunch' 相当于spam = 'lunch' ham = 'lunch'
+
+
+序列赋值:
+    >>> undge = 1
+    >>> wink = 2
+    >>> A, B = undge, wink
+    >>> A, B
+    (1,2)
+    >>> [a, b, c] = (1, 2, 3)
+    >>> a, c
+    (1, 3)
+ - 注意两边值必须相等、也就是说两边如果不相等就会报错
+ - python3 中可以这样
+    >>> l = 'abcde'
+    >>> a,b,*c = l
+    a=a,b=b,c='cde'
+    >>> a,*b,c = 'spam'
+    >>> a, b, c
+    ('s',['p','a','m'])
+ - 同样也可以使用显示的索引和分片实现同样的效果
+    >>> s = 'spam'
+    >>> a,b = s[0],s[1:]
+增强赋值:
+    >>> x = 1
+    >>> x = x + 1
+    >>> x
+    2
+    >>> x += 1
+    >>> x
+    3

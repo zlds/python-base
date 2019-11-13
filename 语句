@@ -1,0 +1,3 @@
+语句    角色   列子
+赋值    创建引用值  a, b, c = 'good', 'bad', 'ugly'
+调用    执行函数   log.write('spam, ham')
